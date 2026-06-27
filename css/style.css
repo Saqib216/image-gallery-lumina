@@ -64,11 +64,17 @@ header {
     font-size: 1.2rem;
     font-weight: 600;
     color: var(--text-primary);
+    transition: var(--transition);
 }
 
 .logo i {
-    color: var(--accent);
+    color: var(--text-secondary);
     font-size: 1.4rem;
+    transition: var(--transition);
+}
+
+.logo span {
+    transition: var(--transition);
 }
 
 .nav-tag {
@@ -396,6 +402,14 @@ header {
 }
 
 @media (hover: hover) {
+    .logo:hover i {
+        color: var(--accent);
+    }
+
+    .logo:hover span {
+        color: var(--accent);
+    }
+
     .filter-btn:hover {
         border-color: var(--accent);
         color: var(--accent);
