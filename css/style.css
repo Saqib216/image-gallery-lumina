@@ -88,10 +88,11 @@ header {
     font-size: 3rem;
     font-weight: 700;
     margin-bottom: 16px;
-    background: linear-gradient(135deg, #7a7a7a 30%, #6d58ab 100%);
-    -webkit-background-clip: text;
+    /* background: linear-gradient(135deg, #7a7a7a 30%, #6d58ab 100%); */
+    /* -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
-    background-clip: text;
+    background-clip: text; */
+    color: var(--text-primary);
 }
 
 .hero p {
@@ -166,9 +167,9 @@ header {
 }
 
 .gallery-grid {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    gap: 16px;
+    display: block;
+    column-count: 3;
+    column-gap: 16px;
 }
 
 .gallery-card {
@@ -177,7 +178,10 @@ header {
     overflow: hidden;
     cursor: pointer;
     background-color: var(--bg-card);
-    aspect-ratio: 4/3;
+    margin-bottom: 16px;
+    break-inside: avoid;
+    display: inline-block;
+    width: 100%;
 }
 
 .gallery-card img {
@@ -355,7 +359,7 @@ header {
     }
 
     .gallery-grid {
-        grid-template-columns: repeat(2, 1fr);
+        column-count: 2;
     }
 
     .lightbox-content {
@@ -373,7 +377,7 @@ header {
     }
 
     .gallery-grid {
-        grid-template-columns: 1fr;
+        column-count: 1;
     }
 
     .lightbox-nav {
@@ -457,11 +461,14 @@ header {
 }
 
 @keyframes blink {
-    0%, 50% {
+
+    0%,
+    50% {
         opacity: 1;
     }
 
-    51%, 100% {
+    51%,
+    100% {
         opacity: 0;
     }
 }
