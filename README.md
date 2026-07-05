@@ -1,12 +1,12 @@
 # 🖼️ Image Gallery: LUMINA
 
-A dark-themed, fully responsive image gallery built with vanilla HTML, CSS, and JavaScript. Features category filtering, real-time search, a smooth lightbox viewer with keyboard navigation, and hover effects. Built as part of my Frontend Development Internship at **CodeAlpha**.
+A dark-themed, fully responsive image gallery built with vanilla HTML, CSS, and JavaScript. Features category filtering, real-time search, a smooth lightbox viewer with keyboard navigation, and hover effects.
 
 ---
 
 ## 🔗 Live Demo
 
-> _https://code-alpha-image-gallery-livid.vercel.app_
+> _https://image-gallery-lumina.vercel.app_
 
 ---
 
@@ -34,7 +34,7 @@ A dark-themed, fully responsive image gallery built with vanilla HTML, CSS, and 
 ## 🗂️ Project Structure
 
 ```
-CodeAlpha_ImageGallery/
+ImageGallery_LUMINA/
 ├── index.html          # App markup — header, hero, filters, gallery grid, lightbox
 ├── css/
 │   └── style.css       # Dark theme, glassmorphism, grid, hover effects, responsive
@@ -249,7 +249,7 @@ document.addEventListener("keydown", (e) => {
 No build tools or dependencies required.
 
 ```bash
-git clone https://github.com/Saqib216/CodeAlpha_ImageGallery.git
+git clone https://github.com/Saqib216/image-gallery-lumina.git
 cd ImageGallery
 # Open index.html in your browser or use VS Code Live Server
 ```
@@ -258,7 +258,7 @@ cd ImageGallery
 
 ## 👨‍💻 Author
 
-**Muhammad Saqib Hussnain** | Frontend Development Intern @ CodeAlpha
+**Muhammad Saqib Hussnain** 
 
 - [GitHub](https://github.com/Saqib216)
 - [LinkedIn](https://www.linkedin.com/in/saqib-hussnain)
